@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    setlocale(LC_ALL,"Portuguese");
+    char sa[100];
+    char sb[100];
+    int i;
+
+    printf("Digite uma frase:");
+    scanf("%s", &sa);
+
+    
+    for (i = 0; i <= 100; i++){
+        
+        sb[i] = sa[i];
+    }
+    
+    printf("%s", sb);
+
+    return 0;
+}

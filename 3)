@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    
+    int x, y, a[3][3] = {1, -1, 9, 7, 14, -8, 0, -5, -5}, b[3][3] = {-1, 1, -9, -7, -14, 8, 0, 5, 5};
+    int resultado;
+    
+    for(x=0;x<3;x++){
+        for(y=0;y<3;y++){
+            resultado = a[x][y] + b[x][y];
+        }
+    }
+    if(resultado==0){
+        printf("As Matrizes sao opostas");
+    }
+    else{
+        printf("\nAs Matrizes nao sao opostas");
+    }
+    
+
+    return 0;
+}

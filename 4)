@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    
+    int tamx = 5, tamy = 4;
+    int x, y, mat [tamx][tamy], trans[tamy][tamx];
+    
+    srand(time(NULL));
+    
+    for(x = 0; x < tamx; x++){
+        for(y = 0; y < tamy; y++){
+            mat[x][y] = rand() % 500;
+        }
+    }
+        printf("\nMatriz gerada");
+        for(x = 0; x < tamx; x++){
+            for(y = 0; y < tamy; y++){
+                printf("\n%3d", mat[x][y]);
+            }
+            printf("\n");
+        }
+        
+    for(x = 0; x < tamx; x++){
+        for(y = 0; y < tamy; y++){
+            trans[y][x];
+        }
+    }
+    printf("\nTransposicao da Matriz: ");
+    for(x = 0; x < tamy; x++){
+        for(y = 0; tamx; y++){
+            printf("%3d", trans[x][y]);
+        }
+        printf("\n");
+    }
+    
+    
+
+    return 0;
+}
